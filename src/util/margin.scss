@@ -1,0 +1,69 @@
+
+@mixin margin($sizes, $screen, $dir){
+  @each $name, $i in $sizes {
+    @if($screen == false){
+      @if($dir == top){
+        .mt#{$name}{
+          margin-top: #{$i};
+        }
+      }
+      @else if($dir == right){
+        .mr#{$name}{
+          margin-right: #{$i};
+        }
+      }
+      @else if($dir == botton){
+        .mb#{$name}{
+          margin-bottom: #{$i};
+        }
+      }
+      @else if($dir == left){
+        .ml#{$name}{
+          margin-left: #{$i};
+        }
+      }
+      @else if($dir == false){
+        .m#{$name}{
+          margin: #{$i};
+        }
+      }
+    }
+    @else {
+      @if($dir == top){
+        .mt#{$name}\@#{$screen}{
+          margin-top: #{$i};
+        }
+      }
+      @else if($dir == right){
+        .mr#{$name}\@#{$screen}{
+          margin-right: #{$i};
+        }
+      }
+      @else if($dir == bottom){
+        .mb#{$name}\@#{$screen}{
+          margin-bottom: #{$i};
+        }
+      }
+      @else if($dir == left){
+        .ml#{$name}\@#{$screen}{
+          margin-left: #{$i};
+        }
+      }
+      @else if($dir == false){
+        .m#{$name}\@#{$screen}{
+          margin: #{$i};
+        }
+      }
+    }
+  }
+}
+
+@mixin margins($screen){
+  @include margin($sizes-em, $screen, false);
+  @include margin($sizes-em, $screen, top);
+  @include margin($sizes-em, $screen, right);
+  @include margin($sizes-em, $screen, bottom);
+  @include margin($sizes-em, $screen, left);
+}
+
+@include margins(false);

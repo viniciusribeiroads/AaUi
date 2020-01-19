@@ -6,7 +6,7 @@
   padding-left: 15px;
 }
 
-.row {
+.grid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -43,34 +43,34 @@
   @each $name, $i in $names {
     @if $extend == false {
       @if $screen != false {
-        .#{$name}-#{$screen}.column{
+        .#{$name}\@#{$screen}{
           @include column-props($i)
         }
-        .#{$name}-#{$screen}-off.column{
+        .off-#{$name}\@#{$screen}{
           @include column-off($i)
         }
-        .row.#{$name}-#{$screen} .column{
+        .row.#{$name}\@#{$screen} .column{
           @include columns-grid($i)
         }
       }
       @else {
-        .#{$name}.column{
+        .#{$name}{
           @include column-props($i)
         }
         .row.#{$name} .column{
           @include columns-grid($i)
         }
-        .#{$name}-off.column{
+        .off-#{$name}{
           @include column-off($i)
         }
       }
     }
     @else {
       @if $screen != null {
-        .row .#{$name}-#{$screen}.column{
+        .row .#{$name}\@#{$screen}{
           @extend %columns;
         }
-        .row.#{$name}-#{$screen} .column{
+        .row.#{$name}\@#{$screen} .column{
           @extend %columns;
         }
       }
@@ -81,7 +81,7 @@
         .row.#{$name} .column{
           @extend %columns;
         }
-        .#{$name}.column{
+        .#{$name}{
           @extend %columns;
         }
       }

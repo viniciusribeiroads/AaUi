@@ -21,17 +21,21 @@
 
 @media (max-width: $media-screen-xs){
   @include paddings(xs);
+  @include margins(xs);
   @include fluid-on(xs);
 }
 @media (max-width: $media-screen-sm){
   @include paddings(sm);
+  @include margins(sm);
   @include fluid-on(sm);
 }
 @media (max-width: $media-screen-md){
   @include paddings(md);
+  @include margins(md);
   @include fluid-on(md);
 }
 @media (max-width: $media-screen-lg){
   @include paddings(lg);
+  @include margins(lg);
   @include fluid-on(lg);
 }
