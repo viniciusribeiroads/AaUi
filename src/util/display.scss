@@ -1,1 +1,17 @@
 
+@mixin display($display, $screen){
+  @each $name in $display {
+    @if($screen == false){
+      .d#{$name}{
+        display: #{$name};
+      }
+    }
+    @else{
+      .d#{$name}\@#{$screen}{
+        display: #{$name};
+      }
+    }
+  }
+}
+
+@include display($display, false);

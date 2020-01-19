@@ -1,4 +1,4 @@
-.container {
+.content {
   width: 100%;
   width: 100%;
   padding-right: 15px;
@@ -8,13 +8,13 @@
 }
 
 @mixin container($width){
-  .container{
+  .content{
     max-width: $width;
   }
 }
 
 @mixin fluid-on($screen){
-  .fluid-#{$screen}{
+  .fluid\@#{$screen}{
     max-width: 100%;
   }
 }

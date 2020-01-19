@@ -23,19 +23,23 @@
   @include paddings(xs);
   @include margins(xs);
   @include fluid-on(xs);
+  @include display($display, xs);
 }
 @media (max-width: $media-screen-sm){
   @include paddings(sm);
   @include margins(sm);
   @include fluid-on(sm);
+  @include display($display, sm);
 }
 @media (max-width: $media-screen-md){
   @include paddings(md);
   @include margins(md);
   @include fluid-on(md);
+  @include display($display, md);
 }
 @media (max-width: $media-screen-lg){
   @include paddings(lg);
   @include margins(lg);
   @include fluid-on(lg);
+  @include display($display, lg);
 }

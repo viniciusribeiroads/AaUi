@@ -11,12 +11,13 @@ body{
 @import "vendor/var";
 
 // components
-@import "components/container";
+@import "components/content";
 @import "components/grid";
 
 // Utilities
 @import "util/padding";
 @import "util/margin";
+@import "util/display";
 
 // Media
 @import "media-query";

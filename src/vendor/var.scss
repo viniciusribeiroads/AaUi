@@ -26,6 +26,10 @@ $sizes-em: (
         0: 0 !important
 );
 
+$display: (
+    block, none, flex, inline-block
+);
+
 
 // Media screen breakpoins
 $media-screen-xs: 576px;

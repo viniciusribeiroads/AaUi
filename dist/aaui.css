@@ -7,7 +7,7 @@ body {
   font-size: 1em;
 }
 
-.container {
+.content {
   width: 100%;
   width: 100%;
   padding-right: 15px;
@@ -16,11 +16,11 @@ body {
   margin-left: auto;
 }
 
-.fluid-all {
+.fluid\@all {
   max-width: 100%;
 }
 
-.row.twelve\@lg .column, .row .twelve\@lg, .row.eleven\@lg .column, .row .eleven\@lg, .row.ten\@lg .column, .row .ten\@lg, .row.nine\@lg .column, .row .nine\@lg, .row.eight\@lg .column, .row .eight\@lg, .row.seven\@lg .column, .row .seven\@lg, .row.six\@lg .column, .row .six\@lg, .row.five\@lg .column, .row .five\@lg, .row.four\@lg .column, .row .four\@lg, .row.three\@lg .column, .row .three\@lg, .row.two\@lg .column, .row .two\@lg, .row.one\@lg .column, .row .one\@lg, .row.twelve\@md .column, .row .twelve\@md, .row.eleven\@md .column, .row .eleven\@md, .row.ten\@md .column, .row .ten\@md, .row.nine\@md .column, .row .nine\@md, .row.eight\@md .column, .row .eight\@md, .row.seven\@md .column, .row .seven\@md, .row.six\@md .column, .row .six\@md, .row.five\@md .column, .row .five\@md, .row.four\@md .column, .row .four\@md, .row.three\@md .column, .row .three\@md, .row.two\@md .column, .row .two\@md, .row.one\@md .column, .row .one\@md, .row.twelve\@sm .column, .row .twelve\@sm, .row.eleven\@sm .column, .row .eleven\@sm, .row.ten\@sm .column, .row .ten\@sm, .row.nine\@sm .column, .row .nine\@sm, .row.eight\@sm .column, .row .eight\@sm, .row.seven\@sm .column, .row .seven\@sm, .row.six\@sm .column, .row .six\@sm, .row.five\@sm .column, .row .five\@sm, .row.four\@sm .column, .row .four\@sm, .row.three\@sm .column, .row .three\@sm, .row.two\@sm .column, .row .two\@sm, .row.one\@sm .column, .row .one\@sm, .row.twelve\@xs .column, .row .twelve\@xs, .row.eleven\@xs .column, .row .eleven\@xs, .row.ten\@xs .column, .row .ten\@xs, .row.nine\@xs .column, .row .nine\@xs, .row.eight\@xs .column, .row .eight\@xs, .row.seven\@xs .column, .row .seven\@xs, .row.six\@xs .column, .row .six\@xs, .row.five\@xs .column, .row .five\@xs, .row.four\@xs .column, .row .four\@xs, .row.three\@xs .column, .row .three\@xs, .row.two\@xs .column, .row .two\@xs, .row.one\@xs .column, .row .one\@xs, .twelve, .row.twelve .column, .eleven, .row.eleven .column, .ten, .row.ten .column, .nine, .row.nine .column, .eight, .row.eight .column, .seven, .row.seven .column, .six, .row.six .column, .five, .row.five .column, .four, .row.four .column, .three, .row.three .column, .two, .row.two .column, .one, .row.one .column {
+.grid.twelve\@lg .column, .c12\@lg, .grid.eleven\@lg .column, .c11\@lg, .grid.ten\@lg .column, .c10\@lg, .grid.nine\@lg .column, .c9\@lg, .grid.eight\@lg .column, .c8\@lg, .grid.seven\@lg .column, .c7\@lg, .grid.six\@lg .column, .c6\@lg, .grid.five\@lg .column, .c5\@lg, .grid.four\@lg .column, .c4\@lg, .grid.three\@lg .column, .c3\@lg, .grid.two\@lg .column, .c2\@lg, .grid.one\@lg .column, .c1\@lg, .grid.twelve\@md .column, .c12\@md, .grid.eleven\@md .column, .c11\@md, .grid.ten\@md .column, .c10\@md, .grid.nine\@md .column, .c9\@md, .grid.eight\@md .column, .c8\@md, .grid.seven\@md .column, .c7\@md, .grid.six\@md .column, .c6\@md, .grid.five\@md .column, .c5\@md, .grid.four\@md .column, .c4\@md, .grid.three\@md .column, .c3\@md, .grid.two\@md .column, .c2\@md, .grid.one\@md .column, .c1\@md, .grid.twelve\@sm .column, .c12\@sm, .grid.eleven\@sm .column, .c11\@sm, .grid.ten\@sm .column, .c10\@sm, .grid.nine\@sm .column, .c9\@sm, .grid.eight\@sm .column, .c8\@sm, .grid.seven\@sm .column, .c7\@sm, .grid.six\@sm .column, .c6\@sm, .grid.five\@sm .column, .c5\@sm, .grid.four\@sm .column, .c4\@sm, .grid.three\@sm .column, .c3\@sm, .grid.two\@sm .column, .c2\@sm, .grid.one\@sm .column, .c1\@sm, .grid.twelve\@xs .column, .c12\@xs, .grid.eleven\@xs .column, .c11\@xs, .grid.ten\@xs .column, .c10\@xs, .grid.nine\@xs .column, .c9\@xs, .grid.eight\@xs .column, .c8\@xs, .grid.seven\@xs .column, .c7\@xs, .grid.six\@xs .column, .c6\@xs, .grid.five\@xs .column, .c5\@xs, .grid.four\@xs .column, .c4\@xs, .grid.three\@xs .column, .c3\@xs, .grid.two\@xs .column, .c2\@xs, .grid.one\@xs .column, .c1\@xs, .c12, .grid.twelve .column, .c11, .grid.eleven .column, .c10, .grid.ten .column, .c9, .grid.nine .column, .c8, .grid.eight .column, .c7, .grid.seven .column, .c6, .grid.six .column, .c5, .grid.five .column, .c4, .grid.four .column, .c3, .grid.three .column, .c2, .grid.two .column, .c1, .grid.one .column {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -36,195 +36,195 @@ body {
   margin-left: -15px;
 }
 
-.one {
+.c1 {
   -ms-flex: 0 0 8.3333333333%;
   flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
 }
 
-.row.one .column {
+.grid.one .column {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.off-one {
+.off-1 {
   margin-left: 8.3333333333%;
 }
 
-.two {
+.c2 {
   -ms-flex: 0 0 16.6666666667%;
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
 }
 
-.row.two .column {
+.grid.two .column {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.off-two {
+.off-2 {
   margin-left: 16.6666666667%;
 }
 
-.three {
+.c3 {
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 
-.row.three .column {
+.grid.three .column {
   -ms-flex: 0 0 33.3333333333%;
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 }
 
-.off-three {
+.off-3 {
   margin-left: 25%;
 }
 
-.four {
+.c4 {
   -ms-flex: 0 0 33.3333333333%;
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 }
 
-.row.four .column {
+.grid.four .column {
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
   max-width: 25%;
 }
 
-.off-four {
+.off-4 {
   margin-left: 33.3333333333%;
 }
 
-.five {
+.c5 {
   -ms-flex: 0 0 41.6666666667%;
   flex: 0 0 41.6666666667%;
   max-width: 41.6666666667%;
 }
 
-.row.five .column {
+.grid.five .column {
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
   max-width: 20%;
 }
 
-.off-five {
+.off-5 {
   margin-left: 41.6666666667%;
 }
 
-.six {
+.c6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.row.six .column {
+.grid.six .column {
   -ms-flex: 0 0 16.6666666667%;
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
 }
 
-.off-six {
+.off-6 {
   margin-left: 50%;
 }
 
-.seven {
+.c7 {
   -ms-flex: 0 0 58.3333333333%;
   flex: 0 0 58.3333333333%;
   max-width: 58.3333333333%;
 }
 
-.row.seven .column {
+.grid.seven .column {
   -ms-flex: 0 0 14.2857142857%;
   flex: 0 0 14.2857142857%;
   max-width: 14.2857142857%;
 }
 
-.off-seven {
+.off-7 {
   margin-left: 58.3333333333%;
 }
 
-.eight {
+.c8 {
   -ms-flex: 0 0 66.6666666667%;
   flex: 0 0 66.6666666667%;
   max-width: 66.6666666667%;
 }
 
-.row.eight .column {
+.grid.eight .column {
   -ms-flex: 0 0 12.5%;
   flex: 0 0 12.5%;
   max-width: 12.5%;
 }
 
-.off-eight {
+.off-8 {
   margin-left: 66.6666666667%;
 }
 
-.nine {
+.c9 {
   -ms-flex: 0 0 75%;
   flex: 0 0 75%;
   max-width: 75%;
 }
 
-.row.nine .column {
+.grid.nine .column {
   -ms-flex: 0 0 11.1111111111%;
   flex: 0 0 11.1111111111%;
   max-width: 11.1111111111%;
 }
 
-.off-nine {
+.off-9 {
   margin-left: 75%;
 }
 
-.ten {
+.c10 {
   -ms-flex: 0 0 83.3333333333%;
   flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
 }
 
-.row.ten .column {
+.grid.ten .column {
   -ms-flex: 0 0 10%;
   flex: 0 0 10%;
   max-width: 10%;
 }
 
-.off-ten {
+.off-10 {
   margin-left: 83.3333333333%;
 }
 
-.eleven {
+.c11 {
   -ms-flex: 0 0 91.6666666667%;
   flex: 0 0 91.6666666667%;
   max-width: 91.6666666667%;
 }
 
-.row.eleven .column {
+.grid.eleven .column {
   -ms-flex: 0 0 9.0909090909%;
   flex: 0 0 9.0909090909%;
   max-width: 9.0909090909%;
 }
 
-.off-eleven {
+.off-11 {
   margin-left: 91.6666666667%;
 }
 
-.twelve {
+.c12 {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.row.twelve .column {
+.grid.twelve .column {
   -ms-flex: 0 0 8.3333333333%;
   flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
 }
 
-.off-twelve {
+.off-12 {
   margin-left: 100%;
 }
 
@@ -452,791 +452,807 @@ body {
   margin-left: 0 !important;
 }
 
+.dblock {
+  display: block;
+}
+
+.dnone {
+  display: none;
+}
+
+.dflex {
+  display: flex;
+}
+
+.dinline-block {
+  display: inline-block;
+}
+
 @media (min-width: 576px) {
-  .one\@xs {
+  .c1\@xs {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .off-one\@xs {
+  .off-c1\@xs {
     margin-left: 8.3333333333%;
   }
 
-  .row.one\@xs .column {
+  .grid.one\@xs .column {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .two\@xs {
+  .c2\@xs {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .off-two\@xs {
+  .off-c2\@xs {
     margin-left: 16.6666666667%;
   }
 
-  .row.two\@xs .column {
+  .grid.two\@xs .column {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .three\@xs {
+  .c3\@xs {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .off-three\@xs {
+  .off-c3\@xs {
     margin-left: 25%;
   }
 
-  .row.three\@xs .column {
+  .grid.three\@xs .column {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .four\@xs {
+  .c4\@xs {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .off-four\@xs {
+  .off-c4\@xs {
     margin-left: 33.3333333333%;
   }
 
-  .row.four\@xs .column {
+  .grid.four\@xs .column {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .five\@xs {
+  .c5\@xs {
     -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
-  .off-five\@xs {
+  .off-c5\@xs {
     margin-left: 41.6666666667%;
   }
 
-  .row.five\@xs .column {
+  .grid.five\@xs .column {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
   }
 
-  .six\@xs {
+  .c6\@xs {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .off-six\@xs {
+  .off-c6\@xs {
     margin-left: 50%;
   }
 
-  .row.six\@xs .column {
+  .grid.six\@xs .column {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .seven\@xs {
+  .c7\@xs {
     -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
-  .off-seven\@xs {
+  .off-c7\@xs {
     margin-left: 58.3333333333%;
   }
 
-  .row.seven\@xs .column {
+  .grid.seven\@xs .column {
     -ms-flex: 0 0 14.2857142857%;
     flex: 0 0 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  .eight\@xs {
+  .c8\@xs {
     -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
-  .off-eight\@xs {
+  .off-c8\@xs {
     margin-left: 66.6666666667%;
   }
 
-  .row.eight\@xs .column {
+  .grid.eight\@xs .column {
     -ms-flex: 0 0 12.5%;
     flex: 0 0 12.5%;
     max-width: 12.5%;
   }
 
-  .nine\@xs {
+  .c9\@xs {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .off-nine\@xs {
+  .off-c9\@xs {
     margin-left: 75%;
   }
 
-  .row.nine\@xs .column {
+  .grid.nine\@xs .column {
     -ms-flex: 0 0 11.1111111111%;
     flex: 0 0 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  .ten\@xs {
+  .c10\@xs {
     -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
-  .off-ten\@xs {
+  .off-c10\@xs {
     margin-left: 83.3333333333%;
   }
 
-  .row.ten\@xs .column {
+  .grid.ten\@xs .column {
     -ms-flex: 0 0 10%;
     flex: 0 0 10%;
     max-width: 10%;
   }
 
-  .eleven\@xs {
+  .c11\@xs {
     -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
-  .off-eleven\@xs {
+  .off-c11\@xs {
     margin-left: 91.6666666667%;
   }
 
-  .row.eleven\@xs .column {
+  .grid.eleven\@xs .column {
     -ms-flex: 0 0 9.0909090909%;
     flex: 0 0 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  .twelve\@xs {
+  .c12\@xs {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .off-twelve\@xs {
+  .off-c12\@xs {
     margin-left: 100%;
   }
 
-  .row.twelve\@xs .column {
+  .grid.twelve\@xs .column {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .container {
+  .content {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .one\@sm {
+  .c1\@sm {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .off-one\@sm {
+  .off-c1\@sm {
     margin-left: 8.3333333333%;
   }
 
-  .row.one\@sm .column {
+  .grid.one\@sm .column {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .two\@sm {
+  .c2\@sm {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .off-two\@sm {
+  .off-c2\@sm {
     margin-left: 16.6666666667%;
   }
 
-  .row.two\@sm .column {
+  .grid.two\@sm .column {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .three\@sm {
+  .c3\@sm {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .off-three\@sm {
+  .off-c3\@sm {
     margin-left: 25%;
   }
 
-  .row.three\@sm .column {
+  .grid.three\@sm .column {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .four\@sm {
+  .c4\@sm {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .off-four\@sm {
+  .off-c4\@sm {
     margin-left: 33.3333333333%;
   }
 
-  .row.four\@sm .column {
+  .grid.four\@sm .column {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .five\@sm {
+  .c5\@sm {
     -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
-  .off-five\@sm {
+  .off-c5\@sm {
     margin-left: 41.6666666667%;
   }
 
-  .row.five\@sm .column {
+  .grid.five\@sm .column {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
   }
 
-  .six\@sm {
+  .c6\@sm {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .off-six\@sm {
+  .off-c6\@sm {
     margin-left: 50%;
   }
 
-  .row.six\@sm .column {
+  .grid.six\@sm .column {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .seven\@sm {
+  .c7\@sm {
     -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
-  .off-seven\@sm {
+  .off-c7\@sm {
     margin-left: 58.3333333333%;
   }
 
-  .row.seven\@sm .column {
+  .grid.seven\@sm .column {
     -ms-flex: 0 0 14.2857142857%;
     flex: 0 0 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  .eight\@sm {
+  .c8\@sm {
     -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
-  .off-eight\@sm {
+  .off-c8\@sm {
     margin-left: 66.6666666667%;
   }
 
-  .row.eight\@sm .column {
+  .grid.eight\@sm .column {
     -ms-flex: 0 0 12.5%;
     flex: 0 0 12.5%;
     max-width: 12.5%;
   }
 
-  .nine\@sm {
+  .c9\@sm {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .off-nine\@sm {
+  .off-c9\@sm {
     margin-left: 75%;
   }
 
-  .row.nine\@sm .column {
+  .grid.nine\@sm .column {
     -ms-flex: 0 0 11.1111111111%;
     flex: 0 0 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  .ten\@sm {
+  .c10\@sm {
     -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
-  .off-ten\@sm {
+  .off-c10\@sm {
     margin-left: 83.3333333333%;
   }
 
-  .row.ten\@sm .column {
+  .grid.ten\@sm .column {
     -ms-flex: 0 0 10%;
     flex: 0 0 10%;
     max-width: 10%;
   }
 
-  .eleven\@sm {
+  .c11\@sm {
     -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
-  .off-eleven\@sm {
+  .off-c11\@sm {
     margin-left: 91.6666666667%;
   }
 
-  .row.eleven\@sm .column {
+  .grid.eleven\@sm .column {
     -ms-flex: 0 0 9.0909090909%;
     flex: 0 0 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  .twelve\@sm {
+  .c12\@sm {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .off-twelve\@sm {
+  .off-c12\@sm {
     margin-left: 100%;
   }
 
-  .row.twelve\@sm .column {
+  .grid.twelve\@sm .column {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .container {
+  .content {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .one\@md {
+  .c1\@md {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .off-one\@md {
+  .off-c1\@md {
     margin-left: 8.3333333333%;
   }
 
-  .row.one\@md .column {
+  .grid.one\@md .column {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .two\@md {
+  .c2\@md {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .off-two\@md {
+  .off-c2\@md {
     margin-left: 16.6666666667%;
   }
 
-  .row.two\@md .column {
+  .grid.two\@md .column {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .three\@md {
+  .c3\@md {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .off-three\@md {
+  .off-c3\@md {
     margin-left: 25%;
   }
 
-  .row.three\@md .column {
+  .grid.three\@md .column {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .four\@md {
+  .c4\@md {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .off-four\@md {
+  .off-c4\@md {
     margin-left: 33.3333333333%;
   }
 
-  .row.four\@md .column {
+  .grid.four\@md .column {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .five\@md {
+  .c5\@md {
     -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
-  .off-five\@md {
+  .off-c5\@md {
     margin-left: 41.6666666667%;
   }
 
-  .row.five\@md .column {
+  .grid.five\@md .column {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
   }
 
-  .six\@md {
+  .c6\@md {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .off-six\@md {
+  .off-c6\@md {
     margin-left: 50%;
   }
 
-  .row.six\@md .column {
+  .grid.six\@md .column {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .seven\@md {
+  .c7\@md {
     -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
-  .off-seven\@md {
+  .off-c7\@md {
     margin-left: 58.3333333333%;
   }
 
-  .row.seven\@md .column {
+  .grid.seven\@md .column {
     -ms-flex: 0 0 14.2857142857%;
     flex: 0 0 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  .eight\@md {
+  .c8\@md {
     -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
-  .off-eight\@md {
+  .off-c8\@md {
     margin-left: 66.6666666667%;
   }
 
-  .row.eight\@md .column {
+  .grid.eight\@md .column {
     -ms-flex: 0 0 12.5%;
     flex: 0 0 12.5%;
     max-width: 12.5%;
   }
 
-  .nine\@md {
+  .c9\@md {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .off-nine\@md {
+  .off-c9\@md {
     margin-left: 75%;
   }
 
-  .row.nine\@md .column {
+  .grid.nine\@md .column {
     -ms-flex: 0 0 11.1111111111%;
     flex: 0 0 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  .ten\@md {
+  .c10\@md {
     -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
-  .off-ten\@md {
+  .off-c10\@md {
     margin-left: 83.3333333333%;
   }
 
-  .row.ten\@md .column {
+  .grid.ten\@md .column {
     -ms-flex: 0 0 10%;
     flex: 0 0 10%;
     max-width: 10%;
   }
 
-  .eleven\@md {
+  .c11\@md {
     -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
-  .off-eleven\@md {
+  .off-c11\@md {
     margin-left: 91.6666666667%;
   }
 
-  .row.eleven\@md .column {
+  .grid.eleven\@md .column {
     -ms-flex: 0 0 9.0909090909%;
     flex: 0 0 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  .twelve\@md {
+  .c12\@md {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .off-twelve\@md {
+  .off-c12\@md {
     margin-left: 100%;
   }
 
-  .row.twelve\@md .column {
+  .grid.twelve\@md .column {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .container {
+  .content {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .one\@lg {
+  .c1\@lg {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .off-one\@lg {
+  .off-c1\@lg {
     margin-left: 8.3333333333%;
   }
 
-  .row.one\@lg .column {
+  .grid.one\@lg .column {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .two\@lg {
+  .c2\@lg {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .off-two\@lg {
+  .off-c2\@lg {
     margin-left: 16.6666666667%;
   }
 
-  .row.two\@lg .column {
+  .grid.two\@lg .column {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .three\@lg {
+  .c3\@lg {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .off-three\@lg {
+  .off-c3\@lg {
     margin-left: 25%;
   }
 
-  .row.three\@lg .column {
+  .grid.three\@lg .column {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .four\@lg {
+  .c4\@lg {
     -ms-flex: 0 0 33.3333333333%;
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  .off-four\@lg {
+  .off-c4\@lg {
     margin-left: 33.3333333333%;
   }
 
-  .row.four\@lg .column {
+  .grid.four\@lg .column {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
   }
 
-  .five\@lg {
+  .c5\@lg {
     -ms-flex: 0 0 41.6666666667%;
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
   }
 
-  .off-five\@lg {
+  .off-c5\@lg {
     margin-left: 41.6666666667%;
   }
 
-  .row.five\@lg .column {
+  .grid.five\@lg .column {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
   }
 
-  .six\@lg {
+  .c6\@lg {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .off-six\@lg {
+  .off-c6\@lg {
     margin-left: 50%;
   }
 
-  .row.six\@lg .column {
+  .grid.six\@lg .column {
     -ms-flex: 0 0 16.6666666667%;
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  .seven\@lg {
+  .c7\@lg {
     -ms-flex: 0 0 58.3333333333%;
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
   }
 
-  .off-seven\@lg {
+  .off-c7\@lg {
     margin-left: 58.3333333333%;
   }
 
-  .row.seven\@lg .column {
+  .grid.seven\@lg .column {
     -ms-flex: 0 0 14.2857142857%;
     flex: 0 0 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  .eight\@lg {
+  .c8\@lg {
     -ms-flex: 0 0 66.6666666667%;
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
 
-  .off-eight\@lg {
+  .off-c8\@lg {
     margin-left: 66.6666666667%;
   }
 
-  .row.eight\@lg .column {
+  .grid.eight\@lg .column {
     -ms-flex: 0 0 12.5%;
     flex: 0 0 12.5%;
     max-width: 12.5%;
   }
 
-  .nine\@lg {
+  .c9\@lg {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
   }
 
-  .off-nine\@lg {
+  .off-c9\@lg {
     margin-left: 75%;
   }
 
-  .row.nine\@lg .column {
+  .grid.nine\@lg .column {
     -ms-flex: 0 0 11.1111111111%;
     flex: 0 0 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  .ten\@lg {
+  .c10\@lg {
     -ms-flex: 0 0 83.3333333333%;
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 
-  .off-ten\@lg {
+  .off-c10\@lg {
     margin-left: 83.3333333333%;
   }
 
-  .row.ten\@lg .column {
+  .grid.ten\@lg .column {
     -ms-flex: 0 0 10%;
     flex: 0 0 10%;
     max-width: 10%;
   }
 
-  .eleven\@lg {
+  .c11\@lg {
     -ms-flex: 0 0 91.6666666667%;
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
   }
 
-  .off-eleven\@lg {
+  .off-c11\@lg {
     margin-left: 91.6666666667%;
   }
 
-  .row.eleven\@lg .column {
+  .grid.eleven\@lg .column {
     -ms-flex: 0 0 9.0909090909%;
     flex: 0 0 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  .twelve\@lg {
+  .c12\@lg {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .off-twelve\@lg {
+  .off-c12\@lg {
     margin-left: 100%;
   }
 
-  .row.twelve\@lg .column {
+  .grid.twelve\@lg .column {
     -ms-flex: 0 0 8.3333333333%;
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  .container {
+  .content {
     max-width: 1140px;
   }
 }
@@ -1521,8 +1537,24 @@ body {
     margin-left: 0 !important;
   }
 
-  .fluid-xs {
+  .fluid\@xs {
     max-width: 100%;
+  }
+
+  .dblock\@xs {
+    display: block;
+  }
+
+  .dnone\@xs {
+    display: none;
+  }
+
+  .dflex\@xs {
+    display: flex;
+  }
+
+  .dinline-block\@xs {
+    display: inline-block;
   }
 }
 @media (max-width: 768px) {
@@ -1806,8 +1838,24 @@ body {
     margin-left: 0 !important;
   }
 
-  .fluid-sm {
+  .fluid\@sm {
     max-width: 100%;
+  }
+
+  .dblock\@sm {
+    display: block;
+  }
+
+  .dnone\@sm {
+    display: none;
+  }
+
+  .dflex\@sm {
+    display: flex;
+  }
+
+  .dinline-block\@sm {
+    display: inline-block;
   }
 }
 @media (max-width: 992px) {
@@ -2091,8 +2139,24 @@ body {
     margin-left: 0 !important;
   }
 
-  .fluid-md {
+  .fluid\@md {
     max-width: 100%;
+  }
+
+  .dblock\@md {
+    display: block;
+  }
+
+  .dnone\@md {
+    display: none;
+  }
+
+  .dflex\@md {
+    display: flex;
+  }
+
+  .dinline-block\@md {
+    display: inline-block;
   }
 }
 @media (max-width: 1200px) {
@@ -2376,8 +2440,24 @@ body {
     margin-left: 0 !important;
   }
 
-  .fluid-lg {
+  .fluid\@lg {
     max-width: 100%;
+  }
+
+  .dblock\@lg {
+    display: block;
+  }
+
+  .dnone\@lg {
+    display: none;
+  }
+
+  .dflex\@lg {
+    display: flex;
+  }
+
+  .dinline-block\@lg {
+    display: inline-block;
   }
 }
 

@@ -43,45 +43,42 @@
   @each $name, $i in $names {
     @if $extend == false {
       @if $screen != false {
-        .#{$name}\@#{$screen}{
+        .c#{$i}\@#{$screen}{
           @include column-props($i)
         }
-        .off-#{$name}\@#{$screen}{
+        .off-c#{$i}\@#{$screen}{
           @include column-off($i)
         }
-        .row.#{$name}\@#{$screen} .column{
+        .grid.#{$name}\@#{$screen} .column{
           @include columns-grid($i)
         }
       }
       @else {
-        .#{$name}{
+        .c#{$i}{
           @include column-props($i)
         }
-        .row.#{$name} .column{
+        .grid.#{$name} .column{
           @include columns-grid($i)
         }
-        .off-#{$name}{
+        .off-#{$i}{
           @include column-off($i)
         }
       }
     }
     @else {
       @if $screen != null {
-        .row .#{$name}\@#{$screen}{
+        .c#{$i}\@#{$screen}{
           @extend %columns;
         }
-        .row.#{$name}\@#{$screen} .column{
+        .grid.#{$name}\@#{$screen} .column{
           @extend %columns;
         }
       }
       @else {
-        .row.#{$name} .column{
+        .grid.#{$name} .column{
           @extend %columns;
         }
-        .row.#{$name} .column{
-          @extend %columns;
-        }
-        .#{$name}{
+        .c#{$i}{
           @extend %columns;
         }
       }
