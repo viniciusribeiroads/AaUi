@@ -16,14 +16,23 @@ $numbers: (
 );
 
 // sizes
-$sizes-em: (
-        1: .25em !important,
-        2: .5em !important,
-        3: 1em !important,
-        4: 1.5em !important,
-        5: 3em !important,
-        6: 5em !important,
+$sizes-rem: (
+        1: .25rem !important,
+        2: .5rem !important,
+        3: 1rem !important,
+        4: 1.5rem !important,
+        5: 3rem !important,
+        6: 4rem !important,
         0: 0 !important
+);
+
+$fonts-rem: (
+        1: 2.75rem !important,
+        2: 2.5rem !important,
+        3: 2rem !important,
+        4: 1.5rem !important,
+        5: 1.25rem !important,
+        6: 1rem !important,
 );
 
 $display: (

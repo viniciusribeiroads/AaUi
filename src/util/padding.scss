@@ -59,11 +59,11 @@
 }
 
 @mixin paddings($screen){
-  @include padding($sizes-em, $screen, false);
-  @include padding($sizes-em, $screen, top);
-  @include padding($sizes-em, $screen, right);
-  @include padding($sizes-em, $screen, bottom);
-  @include padding($sizes-em, $screen, left);
+  @include padding($sizes-rem, $screen, false);
+  @include padding($sizes-rem, $screen, top);
+  @include padding($sizes-rem, $screen, right);
+  @include padding($sizes-rem, $screen, bottom);
+  @include padding($sizes-rem, $screen, left);
 }
 
 @include paddings(false);

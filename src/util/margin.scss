@@ -59,11 +59,11 @@
 }
 
 @mixin margins($screen){
-  @include margin($sizes-em, $screen, false);
-  @include margin($sizes-em, $screen, top);
-  @include margin($sizes-em, $screen, right);
-  @include margin($sizes-em, $screen, bottom);
-  @include margin($sizes-em, $screen, left);
+  @include margin($sizes-rem, $screen, false);
+  @include margin($sizes-rem, $screen, top);
+  @include margin($sizes-rem, $screen, right);
+  @include margin($sizes-rem, $screen, bottom);
+  @include margin($sizes-rem, $screen, left);
 }
 
 @include margins(false);
