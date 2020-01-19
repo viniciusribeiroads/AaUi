@@ -8,9 +8,15 @@ body{
   font-size: 1em;
 }
 
-@import "vendor/var";
+//Prefix
+@import "vendor/prefix";
+
+// variables
+@import "vendor/variables/var";
+@import "vendor/variables/theme";
 
 // components
+@import "components/card";
 @import "components/content";
 @import "components/grid";
 

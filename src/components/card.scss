@@ -1,0 +1,29 @@
+
+%card_top_and_bottom {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 1rem;
+  background: $bg-light;
+  color: $text-grey-color;
+}
+
+.card {
+  width: 100%;
+  border: $border-light;
+  border-radius: .2rem;
+
+  & .title {
+    @extend %card_top_and_bottom;
+    border-bottom: $border-light;
+  }
+
+  & .body{
+    padding: 1rem;
+  }
+
+  & .footer{
+    @extend %card_top_and_bottom;
+    border-top: $border-light;
+  }
+}

@@ -7,6 +7,30 @@ body {
   font-size: 1em;
 }
 
+.card .footer, .card .title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 1rem;
+  background: #f7f7f7;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.card {
+  width: 100%;
+  border: 0.11rem solid #e2e2e2;
+  border-radius: 0.2rem;
+}
+.card .title {
+  border-bottom: 0.11rem solid #e2e2e2;
+}
+.card .body {
+  padding: 1rem;
+}
+.card .footer {
+  border-top: 0.11rem solid #e2e2e2;
+}
+
 .content {
   width: 100%;
   width: 100%;
