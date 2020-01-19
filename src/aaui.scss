@@ -11,6 +11,11 @@ body{
 //Prefix
 @import "vendor/prefix";
 
+//icons - fontawesome - https://fontawesome.com/
+@import "fontawesome/scss/regular";
+@import "fontawesome/scss/solid";
+@import "fontawesome/scss/fontawesome";
+
 // variables
 @import "vendor/variables/var";
 @import "vendor/variables/theme";
@@ -25,6 +30,7 @@ body{
 @import "util/padding";
 @import "util/margin";
 @import "util/display";
+@import "util/action_space";
 
 // Media
 @import "media-query";
