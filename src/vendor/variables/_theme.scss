@@ -1,0 +1,28 @@
+
+$border-light: .11rem solid #e2e2e2;
+$border-radius: .2rem;
+$shadow-light: 0 0 1.5rem 0 #0000001f;
+$shadow-hover: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
+$shadow-focus: 0 -3px 10px 0 #00000026 inset;
+$text-grey-color: rgba(0, 0, 0, 0.57);
+
+$transiton-bg: box-shadow .3s ease;
+
+
+//background colors
+
+//greys
+$bg-lighter: #f3f3f3;
+$bg-light: #e6e6e6;
+//primary
+$bg-primary-light: #3196ff;
+
+$bg: (
+        primary: #3196ff,
+        info: #58DFFF,
+        warning: #ffbd02,
+        danger: #FF4577,
+        success: #1be462,
+        "purple": #9f23de,
+        "orange": #f17a00
+);

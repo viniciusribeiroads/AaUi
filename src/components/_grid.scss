@@ -6,6 +6,11 @@
   padding-left: 15px;
 }
 
+.column{
+  @extend %columns;
+}
+
+
 .grid {
   display: -ms-flexbox;
   display: flex;

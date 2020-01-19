@@ -1,0 +1,103 @@
+
+@mixin buttons_variations($variations){
+  @each $name, $i in $variations {
+    &.#{$name}{
+      background: #{$i};
+      color: white;
+    }
+  }
+}
+
+.button {
+  padding: 0 1.25em;
+  @extend %flex-center;
+  border-radius: $border-radius;
+  border: none;
+  font-size: 1rem;
+  min-height: 2.25em;
+  float: left;
+  font-weight: 600;
+  background: $bg-lighter;
+  outline: none;
+  @include prefix((transition: box-shadow .4s ease), webkit moz ms);
+  @include prefix((transition: -webkit-box-shadow .4s ease), webkit moz ms);
+  @include prefix((transition: -moz-box-shadow .4s ease), webkit moz ms);
+  @include prefix((transition: -ms-box-shadow .4s ease), webkit moz ms);
+
+  &:hover {
+    @include prefix((box-shadow: $shadow-hover), webkit moz ms);
+  }
+  &:focus{
+    @include prefix((box-shadow: $shadow-focus), webkit moz ms);
+  }
+
+  &.with.icon{
+    padding-left: 0;
+
+    & span {
+      height: 2.25em;
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      width: 2.25em;
+      background: #00000012;
+      margin-right: 1.25em;
+      @extend %flex-center
+    }
+
+    &.right {
+      padding-left: 1.25em;
+      padding-right: 0;
+
+      & span {
+        margin-right: 0;
+        margin-left: 1.25em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+  }
+
+  &.only.icon {
+    padding: 0;
+
+    & span{
+      height: 2.25em;
+      width: 2.25em;
+      @extend %flex-center
+    }
+  }
+  
+
+  @include buttons_variations($bg);
+}
+
+.group{
+  float: left;
+  & .button:nth-child(1){
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  & .button:nth-last-child(1){
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@mixin default-sizes($sizes){
+  @each $size, $i in $sizes{
+    .#{$size}{
+      font-size: #{$i};
+      & .button{
+        font-size: #{$i};
+      }
+    }
+  }
+}
+
+@include default-sizes($default-sizes);

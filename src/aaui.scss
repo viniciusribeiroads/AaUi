@@ -12,9 +12,10 @@ body{
 @import "vendor/prefix";
 
 //icons - fontawesome - https://fontawesome.com/
+@import "fontawesome/scss/fontawesome";
 @import "fontawesome/scss/regular";
 @import "fontawesome/scss/solid";
-@import "fontawesome/scss/fontawesome";
+
 
 // variables
 @import "vendor/variables/var";
@@ -22,11 +23,13 @@ body{
 
 // components
 @import "components/card";
+@import "components/button";
 @import "components/content";
 @import "components/grid";
 
 // Utilities
 @import "util/typography";
+@import "util/fluid";
 @import "util/padding";
 @import "util/margin";
 @import "util/display";

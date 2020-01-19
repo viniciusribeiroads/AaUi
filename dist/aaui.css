@@ -12,41 +12,6 @@ body {
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
-}
-.far {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-}
-
-/*!
- * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: auto;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
-}
-.fa,
-.fas {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
-
-/*!
- * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
 .fa,
 .fas,
 .far,
@@ -5885,13 +5850,54 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+/*!
+ * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+/*!
+ * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.button.only.icon span, .button.with.icon span, .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card .footer, .card .title {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding: 0 1rem;
+  padding: 0 1em;
   min-height: 50px;
-  background: #f7f7f7;
+  background: #f3f3f3;
   color: rgba(0, 0, 0, 0.57);
 }
 
@@ -5910,6 +5916,148 @@ readers do not read off random characters that represent icons */
   border-top: 0.11rem solid #e2e2e2;
 }
 
+.button {
+  padding: 0 1.25em;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1rem;
+  min-height: 2.25em;
+  float: left;
+  font-weight: 600;
+  background: #f3f3f3;
+  outline: none;
+  -webkit-transition: box-shadow 0.4s ease;
+  -moz-transition: box-shadow 0.4s ease;
+  -ms-transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  -moz-transition: -webkit-box-shadow 0.4s ease;
+  -ms-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  -webkit-transition: -moz-box-shadow 0.4s ease;
+  -moz-transition: -moz-box-shadow 0.4s ease;
+  -ms-transition: -moz-box-shadow 0.4s ease;
+  transition: -moz-box-shadow 0.4s ease;
+  -webkit-transition: -ms-box-shadow 0.4s ease;
+  -moz-transition: -ms-box-shadow 0.4s ease;
+  -ms-transition: -ms-box-shadow 0.4s ease;
+  transition: -ms-box-shadow 0.4s ease;
+}
+.button:hover {
+  -webkit-box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
+  -ms-box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
+}
+.button:focus {
+  -webkit-box-shadow: 0 -3px 10px 0 #00000026 inset;
+  -moz-box-shadow: 0 -3px 10px 0 #00000026 inset;
+  -ms-box-shadow: 0 -3px 10px 0 #00000026 inset;
+  box-shadow: 0 -3px 10px 0 #00000026 inset;
+}
+.button.with.icon {
+  padding-left: 0;
+}
+.button.with.icon span {
+  height: 2.25em;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  width: 2.25em;
+  background: #00000012;
+  margin-right: 1.25em;
+}
+.button.with.icon.right {
+  padding-left: 1.25em;
+  padding-right: 0;
+}
+.button.with.icon.right span {
+  margin-right: 0;
+  margin-left: 1.25em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+.button.only.icon {
+  padding: 0;
+}
+.button.only.icon span {
+  height: 2.25em;
+  width: 2.25em;
+}
+.button.primary {
+  background: #3196ff;
+  color: white;
+}
+.button.info {
+  background: #58DFFF;
+  color: white;
+}
+.button.warning {
+  background: #ffbd02;
+  color: white;
+}
+.button.danger {
+  background: #FF4577;
+  color: white;
+}
+.button.success {
+  background: #1be462;
+  color: white;
+}
+.button.purple {
+  background: #9f23de;
+  color: white;
+}
+.button.orange {
+  background: #f17a00;
+  color: white;
+}
+
+.group {
+  float: left;
+}
+.group .button:nth-child(1) {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.group .button:nth-last-child(1) {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.tiny {
+  font-size: 0.75rem;
+}
+.tiny .button {
+  font-size: 0.75rem;
+}
+
+.small {
+  font-size: 0.85rem;
+}
+.small .button {
+  font-size: 0.85rem;
+}
+
+.large {
+  font-size: 1.15rem;
+}
+.large .button {
+  font-size: 1.15rem;
+}
+
+.big {
+  font-size: 1.25rem;
+}
+.big .button {
+  font-size: 1.25rem;
+}
+
 .content {
   width: 100%;
   width: 100%;
@@ -5919,11 +6067,7 @@ readers do not read off random characters that represent icons */
   margin-left: auto;
 }
 
-.fluid\@all {
-  max-width: 100%;
-}
-
-.grid.twelve\@lg .column, .c12\@lg, .grid.eleven\@lg .column, .c11\@lg, .grid.ten\@lg .column, .c10\@lg, .grid.nine\@lg .column, .c9\@lg, .grid.eight\@lg .column, .c8\@lg, .grid.seven\@lg .column, .c7\@lg, .grid.six\@lg .column, .c6\@lg, .grid.five\@lg .column, .c5\@lg, .grid.four\@lg .column, .c4\@lg, .grid.three\@lg .column, .c3\@lg, .grid.two\@lg .column, .c2\@lg, .grid.one\@lg .column, .c1\@lg, .grid.twelve\@md .column, .c12\@md, .grid.eleven\@md .column, .c11\@md, .grid.ten\@md .column, .c10\@md, .grid.nine\@md .column, .c9\@md, .grid.eight\@md .column, .c8\@md, .grid.seven\@md .column, .c7\@md, .grid.six\@md .column, .c6\@md, .grid.five\@md .column, .c5\@md, .grid.four\@md .column, .c4\@md, .grid.three\@md .column, .c3\@md, .grid.two\@md .column, .c2\@md, .grid.one\@md .column, .c1\@md, .grid.twelve\@sm .column, .c12\@sm, .grid.eleven\@sm .column, .c11\@sm, .grid.ten\@sm .column, .c10\@sm, .grid.nine\@sm .column, .c9\@sm, .grid.eight\@sm .column, .c8\@sm, .grid.seven\@sm .column, .c7\@sm, .grid.six\@sm .column, .c6\@sm, .grid.five\@sm .column, .c5\@sm, .grid.four\@sm .column, .c4\@sm, .grid.three\@sm .column, .c3\@sm, .grid.two\@sm .column, .c2\@sm, .grid.one\@sm .column, .c1\@sm, .grid.twelve\@xs .column, .c12\@xs, .grid.eleven\@xs .column, .c11\@xs, .grid.ten\@xs .column, .c10\@xs, .grid.nine\@xs .column, .c9\@xs, .grid.eight\@xs .column, .c8\@xs, .grid.seven\@xs .column, .c7\@xs, .grid.six\@xs .column, .c6\@xs, .grid.five\@xs .column, .c5\@xs, .grid.four\@xs .column, .c4\@xs, .grid.three\@xs .column, .c3\@xs, .grid.two\@xs .column, .c2\@xs, .grid.one\@xs .column, .c1\@xs, .c12, .grid.twelve .column, .c11, .grid.eleven .column, .c10, .grid.ten .column, .c9, .grid.nine .column, .c8, .grid.eight .column, .c7, .grid.seven .column, .c6, .grid.six .column, .c5, .grid.five .column, .c4, .grid.four .column, .c3, .grid.three .column, .c2, .grid.two .column, .c1, .grid.one .column {
+.grid.twelve\@lg .column, .c12\@lg, .grid.eleven\@lg .column, .c11\@lg, .grid.ten\@lg .column, .c10\@lg, .grid.nine\@lg .column, .c9\@lg, .grid.eight\@lg .column, .c8\@lg, .grid.seven\@lg .column, .c7\@lg, .grid.six\@lg .column, .c6\@lg, .grid.five\@lg .column, .c5\@lg, .grid.four\@lg .column, .c4\@lg, .grid.three\@lg .column, .c3\@lg, .grid.two\@lg .column, .c2\@lg, .grid.one\@lg .column, .c1\@lg, .grid.twelve\@md .column, .c12\@md, .grid.eleven\@md .column, .c11\@md, .grid.ten\@md .column, .c10\@md, .grid.nine\@md .column, .c9\@md, .grid.eight\@md .column, .c8\@md, .grid.seven\@md .column, .c7\@md, .grid.six\@md .column, .c6\@md, .grid.five\@md .column, .c5\@md, .grid.four\@md .column, .c4\@md, .grid.three\@md .column, .c3\@md, .grid.two\@md .column, .c2\@md, .grid.one\@md .column, .c1\@md, .grid.twelve\@sm .column, .c12\@sm, .grid.eleven\@sm .column, .c11\@sm, .grid.ten\@sm .column, .c10\@sm, .grid.nine\@sm .column, .c9\@sm, .grid.eight\@sm .column, .c8\@sm, .grid.seven\@sm .column, .c7\@sm, .grid.six\@sm .column, .c6\@sm, .grid.five\@sm .column, .c5\@sm, .grid.four\@sm .column, .c4\@sm, .grid.three\@sm .column, .c3\@sm, .grid.two\@sm .column, .c2\@sm, .grid.one\@sm .column, .c1\@sm, .grid.twelve\@xs .column, .c12\@xs, .grid.eleven\@xs .column, .c11\@xs, .grid.ten\@xs .column, .c10\@xs, .grid.nine\@xs .column, .c9\@xs, .grid.eight\@xs .column, .c8\@xs, .grid.seven\@xs .column, .c7\@xs, .grid.six\@xs .column, .c6\@xs, .grid.five\@xs .column, .c5\@xs, .grid.four\@xs .column, .c4\@xs, .grid.three\@xs .column, .c3\@xs, .grid.two\@xs .column, .c2\@xs, .grid.one\@xs .column, .c1\@xs, .c12, .grid.twelve .column, .c11, .grid.eleven .column, .c10, .grid.ten .column, .c9, .grid.nine .column, .c8, .grid.eight .column, .c7, .grid.seven .column, .c6, .grid.six .column, .c5, .grid.five .column, .c4, .grid.four .column, .c3, .grid.three .column, .c2, .grid.two .column, .c1, .grid.one .column, .column {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -6183,6 +6327,14 @@ h6 {
 
 .h6 {
   font-size: 1rem !important;
+}
+
+.fluid {
+  min-width: 100%;
+}
+
+.fluid\@all {
+  max-width: 100%;
 }
 
 .p1 {

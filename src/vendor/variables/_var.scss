@@ -35,9 +35,22 @@ $fonts-rem: (
         6: 1rem !important,
 );
 
+$default-sizes: (
+        tiny: .75rem,
+        small: .85rem,
+        large: 1.15rem,
+        big: 1.25rem
+);
+
 $display: (
     block, none, flex, inline-block
 );
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 // Media screen breakpoins

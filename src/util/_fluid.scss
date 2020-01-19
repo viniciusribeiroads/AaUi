@@ -1,0 +1,11 @@
+@mixin fluid-on($screen){
+  .fluid\@#{$screen}{
+    max-width: 100%;
+  }
+}
+
+.fluid{
+  min-width: 100%;
+}
+
+@include fluid-on(all);
