@@ -1,0 +1,40 @@
+
+// Grid Column names
+$numbers: (
+        one: 1,
+        two: 2,
+        three: 3,
+        four: 4,
+        five: 5,
+        six: 6,
+        seven: 7,
+        eight: 8,
+        nine: 9,
+        ten: 10,
+        eleven: 11,
+        twelve: 12,
+);
+
+// sizes
+$sizes-em: (
+        1: .25em !important,
+        2: .5em !important,
+        3: 1em !important,
+        4: 1.5em !important,
+        5: 3em !important,
+        6: 5em !important,
+        0: 0 !important
+);
+
+
+// Media screen breakpoins
+$media-screen-xs: 576px;
+$media-screen-sm: 768px;
+$media-screen-md: 992px;
+$media-screen-lg: 1200px;
+
+//Container max width by screen size
+$container-xs: 540px;
+$container-sm: 720px;
+$container-md: 960px;
+$container-lg: 1140px;

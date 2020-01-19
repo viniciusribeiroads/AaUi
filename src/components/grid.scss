@@ -1,0 +1,98 @@
+
+%columns {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@function width($i){
+  @return 100% / 12 * $i;
+}
+
+@function width-grid($id){
+  @return 100% / $id;
+}
+
+@mixin column-props($i){
+  -ms-flex: 0 0 width($i);
+  flex: 0 0 width($i);
+  max-width: width($i);
+}
+
+@mixin column-off($i){
+  margin-left: width($i);
+}
+
+@mixin columns-grid($i){
+  -ms-flex: 0 0 width-grid($i);
+  flex: 0 0 width-grid($i);
+  max-width: width-grid($i);
+}
+
+@mixin column($names, $screen, $extend){
+  @each $name, $i in $names {
+    @if $extend == false {
+      @if $screen != false {
+        .#{$name}-#{$screen}.column{
+          @include column-props($i)
+        }
+        .#{$name}-#{$screen}-off.column{
+          @include column-off($i)
+        }
+        .row.#{$name}-#{$screen} .column{
+          @include columns-grid($i)
+        }
+      }
+      @else {
+        .#{$name}.column{
+          @include column-props($i)
+        }
+        .row.#{$name} .column{
+          @include columns-grid($i)
+        }
+        .#{$name}-off.column{
+          @include column-off($i)
+        }
+      }
+    }
+    @else {
+      @if $screen != null {
+        .row .#{$name}-#{$screen}.column{
+          @extend %columns;
+        }
+        .row.#{$name}-#{$screen} .column{
+          @extend %columns;
+        }
+      }
+      @else {
+        .row.#{$name} .column{
+          @extend %columns;
+        }
+        .row.#{$name} .column{
+          @extend %columns;
+        }
+        .#{$name}.column{
+          @extend %columns;
+        }
+      }
+    }
+  }
+}
+
+@include column($numbers, null,true);
+@include column($numbers, xs,true);
+@include column($numbers, sm,true);
+@include column($numbers, md,true);
+@include column($numbers, lg,true);
+
+@include column($numbers, false, false);

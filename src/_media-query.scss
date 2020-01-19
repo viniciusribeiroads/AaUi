@@ -1,0 +1,37 @@
+// MIN WIDTH
+
+@media (min-width: $media-screen-xs){
+  @include column($numbers, xs,false);
+  @include container($container-xs);
+}
+@media (min-width: $media-screen-sm){
+  @include column($numbers, sm,false);
+  @include container($container-sm);
+}
+@media (min-width: $media-screen-md){
+  @include column($numbers, md,false);
+  @include container($container-md);
+}
+@media (min-width: $media-screen-lg){
+  @include column($numbers, lg,false);
+  @include container($container-lg);
+}
+
+// MAX - WIDTH
+
+@media (max-width: $media-screen-xs){
+  @include paddings(xs);
+  @include fluid-on(xs);
+}
+@media (max-width: $media-screen-sm){
+  @include paddings(sm);
+  @include fluid-on(sm);
+}
+@media (max-width: $media-screen-md){
+  @include paddings(md);
+  @include fluid-on(md);
+}
+@media (max-width: $media-screen-lg){
+  @include paddings(lg);
+  @include fluid-on(lg);
+}

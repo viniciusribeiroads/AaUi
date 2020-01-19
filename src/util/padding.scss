@@ -1,0 +1,69 @@
+
+@mixin padding($sizes, $screen, $dir){
+  @each $name, $i in $sizes {
+    @if($screen == false){
+      @if($dir == top){
+        .pt#{$name}{
+          padding-top: #{$i};
+        }
+      }
+      @else if($dir == right){
+        .pr#{$name}{
+          padding-right: #{$i};
+        }
+      }
+      @else if($dir == botton){
+        .pb#{$name}{
+          padding-bottom: #{$i};
+        }
+      }
+      @else if($dir == left){
+        .pl#{$name}{
+          padding-left: #{$i};
+        }
+      }
+      @else if($dir == false){
+        .p#{$name}{
+          padding: #{$i};
+        }
+      }
+    }
+    @else {
+      @if($dir == top){
+        .pt#{$name}\@#{$screen}{
+          padding-top: #{$i};
+        }
+      }
+      @else if($dir == right){
+        .pr#{$name}\@#{$screen}{
+          padding-right: #{$i};
+        }
+      }
+      @else if($dir == bottom){
+        .pb#{$name}\@#{$screen}{
+          padding-bottom: #{$i};
+        }
+      }
+      @else if($dir == left){
+        .pl#{$name}\@#{$screen}{
+          padding-left: #{$i};
+        }
+      }
+      @else if($dir == false){
+        .p#{$name}\@#{$screen}{
+          padding: #{$i};
+        }
+      }
+    }
+  }
+}
+
+@mixin paddings($screen){
+  @include padding($sizes-em, $screen, false);
+  @include padding($sizes-em, $screen, top);
+  @include padding($sizes-em, $screen, right);
+  @include padding($sizes-em, $screen, bottom);
+  @include padding($sizes-em, $screen, left);
+}
+
+@include paddings(false);
