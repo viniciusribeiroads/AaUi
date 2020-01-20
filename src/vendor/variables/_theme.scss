@@ -1,5 +1,5 @@
 
-$border-light: .11rem solid #e2e2e2;
+$border-light: $size-base solid #e2e2e2;
 $border-radius: .2rem;
 $shadow-light: 0 0 1.5rem 0 #0000001f;
 $shadow-hover: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
@@ -23,6 +23,18 @@ $bg: (
         warning: #ffbd02,
         danger: #FF4577,
         success: #1be462,
+        dark: #333333,
         "purple": #9f23de,
-        "orange": #f17a00
+        "cyan": #56eabc,
+        "orange": #f17a00,
+        "red": #eb1330,
+        grey200: #a8a8a8,
+        grey300: #666666,
+        grey400: #3c3c3c,
+        "black": black,
+        "white": white
+);
+$bg-color-white: (
+        "white": white,
+        grey100: #e4e4e4
 );

@@ -5891,6 +5891,20 @@ readers do not read off random characters that represent icons */
   justify-content: center;
 }
 
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 .card .footer, .card .title {
   display: flex;
   align-items: center;
@@ -5916,15 +5930,29 @@ readers do not read off random characters that represent icons */
   border-top: 0.11rem solid #e2e2e2;
 }
 
+.button.indicator:nth-last-child(1)::before, .button.indicator:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .button {
   padding: 0 1.25em;
+  position: relative;
+  cursor: pointer;
   border-radius: 0.2rem;
   border: none;
   font-size: 1rem;
   min-height: 2.25em;
   float: left;
   font-weight: 600;
-  background: #f3f3f3;
+  background: #e6e6e6;
   outline: none;
   -webkit-transition: box-shadow 0.4s ease;
   -moz-transition: box-shadow 0.4s ease;
@@ -5978,6 +6006,12 @@ readers do not read off random characters that represent icons */
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
 }
+.button.indicator:nth-child(1)::before {
+  right: -6px;
+}
+.button.indicator:nth-last-child(1)::before {
+  left: -6px;
+}
 .button.only.icon {
   padding: 0;
 }
@@ -5985,33 +6019,238 @@ readers do not read off random characters that represent icons */
   height: 2.25em;
   width: 2.25em;
 }
+.button.loading {
+  color: transparent !important;
+  align-items: center;
+  cursor: default;
+}
+.button.loading:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  border-top-color: transparent !important;
+  -webkit-animation: rotate 0.5s linear infinite;
+  -moz-animation: rotate 0.5s linear infinite;
+  -ms-animation: rotate 0.5s linear infinite;
+  animation: rotate 0.5s linear infinite;
+}
 .button.primary {
   background: #3196ff;
   color: white;
+  border-color: #3196ff !important;
+}
+.button.primary.outlined {
+  color: #3196ff;
+}
+.button.primary.outlined.loading:after {
+  border-color: #3196ff;
 }
 .button.info {
   background: #58DFFF;
   color: white;
+  border-color: #58DFFF !important;
+}
+.button.info.outlined {
+  color: #58DFFF;
+}
+.button.info.outlined.loading:after {
+  border-color: #58DFFF;
 }
 .button.warning {
   background: #ffbd02;
   color: white;
+  border-color: #ffbd02 !important;
+}
+.button.warning.outlined {
+  color: #ffbd02;
+}
+.button.warning.outlined.loading:after {
+  border-color: #ffbd02;
 }
 .button.danger {
   background: #FF4577;
   color: white;
+  border-color: #FF4577 !important;
+}
+.button.danger.outlined {
+  color: #FF4577;
+}
+.button.danger.outlined.loading:after {
+  border-color: #FF4577;
 }
 .button.success {
   background: #1be462;
   color: white;
+  border-color: #1be462 !important;
+}
+.button.success.outlined {
+  color: #1be462;
+}
+.button.success.outlined.loading:after {
+  border-color: #1be462;
+}
+.button.dark {
+  background: #333333;
+  color: white;
+  border-color: #333333 !important;
+}
+.button.dark.outlined {
+  color: #333333;
+}
+.button.dark.outlined.loading:after {
+  border-color: #333333;
 }
 .button.purple {
   background: #9f23de;
   color: white;
+  border-color: #9f23de !important;
+}
+.button.purple.outlined {
+  color: #9f23de;
+}
+.button.purple.outlined.loading:after {
+  border-color: #9f23de;
+}
+.button.cyan {
+  background: #56eabc;
+  color: white;
+  border-color: #56eabc !important;
+}
+.button.cyan.outlined {
+  color: #56eabc;
+}
+.button.cyan.outlined.loading:after {
+  border-color: #56eabc;
 }
 .button.orange {
   background: #f17a00;
   color: white;
+  border-color: #f17a00 !important;
+}
+.button.orange.outlined {
+  color: #f17a00;
+}
+.button.orange.outlined.loading:after {
+  border-color: #f17a00;
+}
+.button.red {
+  background: #eb1330;
+  color: white;
+  border-color: #eb1330 !important;
+}
+.button.red.outlined {
+  color: #eb1330;
+}
+.button.red.outlined.loading:after {
+  border-color: #eb1330;
+}
+.button.grey200 {
+  background: #a8a8a8;
+  color: white;
+  border-color: #a8a8a8 !important;
+}
+.button.grey200.outlined {
+  color: #a8a8a8;
+}
+.button.grey200.outlined.loading:after {
+  border-color: #a8a8a8;
+}
+.button.grey300 {
+  background: #666666;
+  color: white;
+  border-color: #666666 !important;
+}
+.button.grey300.outlined {
+  color: #666666;
+}
+.button.grey300.outlined.loading:after {
+  border-color: #666666;
+}
+.button.grey400 {
+  background: #3c3c3c;
+  color: white;
+  border-color: #3c3c3c !important;
+}
+.button.grey400.outlined {
+  color: #3c3c3c;
+}
+.button.grey400.outlined.loading:after {
+  border-color: #3c3c3c;
+}
+.button.black {
+  background: black;
+  color: white;
+  border-color: black !important;
+}
+.button.black.outlined {
+  color: black;
+}
+.button.black.outlined.loading:after {
+  border-color: black;
+}
+.button.white {
+  background: white;
+  color: white;
+  border-color: white !important;
+}
+.button.white.outlined {
+  color: white;
+}
+.button.white.outlined.loading:after {
+  border-color: white;
+}
+.button.white {
+  background: white;
+  color: black;
+  border-color: black !important;
+}
+.button.white.outlined {
+  color: black;
+}
+.button.white.outlined.loading:after {
+  border-color: white;
+}
+.button.grey100 {
+  background: #e4e4e4;
+  color: black;
+  border-color: black !important;
+}
+.button.grey100.outlined {
+  color: black;
+}
+.button.grey100.outlined.loading:after {
+  border-color: #e4e4e4;
+}
+.button.label {
+  border: 0.11em solid #e6e6e6;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.57);
+  box-shadow: none;
+}
+.button.label:nth-child(1) {
+  border-right: none;
+}
+.button.label:nth-last-child(1) {
+  border-left: none;
+}
+.button.outlined {
+  background: transparent;
+  border: 0.11rem solid;
+  height: calc(2.25em - 0.11rem);
+  padding: 0 calc(1.25em - 0.11rem);
+}
+.button.outlined.with.icon span {
+  border-radius: 0;
+  height: calc(2.25em - 0.11rem);
+  width: calc(2.25em - 0.11rem);
+}
+.button.outlined.only.icon span {
+  border-radius: 0;
+  height: calc(2.25em - 0.11rem);
+  width: calc(2.25em - 0.11rem);
 }
 
 .group {
@@ -6028,6 +6267,12 @@ readers do not read off random characters that represent icons */
   border-bottom-right-radius: 0.2rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.group .button.outlined:nth-child(1) {
+  border-right: 0.055rem solid;
+}
+.group .button.outlined:nth-last-child(1) {
+  border-left: 0.055rem solid;
 }
 
 .tiny {

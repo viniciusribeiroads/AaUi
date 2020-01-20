@@ -1,23 +1,56 @@
 
-@mixin buttons_variations($variations){
+@mixin buttons_variations($variations, $color){
   @each $name, $i in $variations {
-    &.#{$name}{
-      background: #{$i};
-      color: white;
+    @if($color == true){
+      &.#{$name}{
+        background: #{$i};
+        color: white;
+        border-color: #{$i} !important;
+        &.outlined{
+          color: #{$i};
+          &.loading:after{
+            border-color: #{$i};
+          }
+        }
+      }
+    }
+    @else{
+      &.#{$name}{
+        background: #{$i};
+        color: black;
+        border-color: black !important;
+        &.outlined{
+          color: black;
+          &.loading:after{
+            border-color: #{$i};
+          }
+        }
+      }
     }
   }
 }
 
+%indicator{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: white;
+  @include prefix((transform: rotate(45deg)), webkit moz ms);
+}
+
 .button {
   padding: 0 1.25em;
+  position: relative;
+  cursor: pointer;
   @extend %flex-center;
   border-radius: $border-radius;
   border: none;
   font-size: 1rem;
-  min-height: 2.25em;
+  min-height: $button-min-height;
   float: left;
   font-weight: 600;
-  background: $bg-lighter;
+  background: $bg-light;
   outline: none;
   @include prefix((transition: box-shadow .4s ease), webkit moz ms);
   @include prefix((transition: -webkit-box-shadow .4s ease), webkit moz ms);
@@ -31,14 +64,15 @@
     @include prefix((box-shadow: $shadow-focus), webkit moz ms);
   }
 
+
   &.with.icon{
     padding-left: 0;
 
     & span {
-      height: 2.25em;
+      height: $button-min-height;
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-      width: 2.25em;
+      width: $button-min-height;
       background: #00000012;
       margin-right: 1.25em;
       @extend %flex-center
@@ -59,6 +93,15 @@
     }
   }
 
+  &.indicator:nth-child(1)::before{
+    @extend %indicator;
+    right: -6px;
+  }
+  &.indicator:nth-last-child(1)::before{
+    @extend %indicator;
+    left: -6px;
+  }
+
   &.only.icon {
     padding: 0;
 
@@ -68,9 +111,55 @@
       @extend %flex-center
     }
   }
-  
 
-  @include buttons_variations($bg);
+  &.loading{
+    color: transparent !important;
+    align-items: center;
+    cursor: default;
+    &:after{
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      border-top-color: transparent !important;
+      @include prefix((animation: rotate .5s linear infinite), webkit moz ms);
+    }
+  }
+  @include buttons_variations($bg, true);
+  @include buttons_variations($bg-color-white, false);
+
+  &.label{
+    border: .11em solid $bg-light;
+    background: transparent;
+    color: $text-grey-color;
+    box-shadow: none;
+
+    &:nth-child(1){
+      border-right: none;
+    }
+    &:nth-last-child(1){
+      border-left: none;
+    }
+  }
+  &.outlined{
+    background: transparent;
+    border: $size-base solid;
+    height: calc(#{$button-min-height} - #{$size-base});
+    padding: 0 calc(1.25em - #{$size-base});
+    &.with.icon span{
+        border-radius: 0;
+        height: calc(#{$button-min-height} - #{$size-base});
+        width: calc(#{$button-min-height} - #{$size-base});
+    }
+    &.only.icon span{
+      border-radius: 0;
+      height: calc(#{$button-min-height} - #{$size-base});
+      width: calc(#{$button-min-height} - #{$size-base});
+    }
+  }
+
 }
 
 .group{
@@ -86,6 +175,14 @@
     border-bottom-right-radius: $border-radius;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  & .button.outlined{
+    &:nth-child(1){
+      border-right: $size-base/2 solid;
+    }
+    &:nth-last-child(1){
+      border-left: $size-base/2 solid;
+    }
   }
 }
 

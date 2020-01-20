@@ -1,0 +1,8 @@
+@keyframes rotate {
+  from {
+    @include prefix((transform: rotate(0deg)), webkit moz ms);
+  }
+  to{
+    @include prefix((transform: rotate(359deg)), webkit moz ms);
+  }
+}
