@@ -12,7 +12,7 @@
           margin-right: #{$i};
         }
       }
-      @else if($dir == botton){
+      @else if($dir == bottom){
         .mb#{$name}{
           margin-bottom: #{$i};
         }

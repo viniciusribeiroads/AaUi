@@ -1,0 +1,15 @@
+
+@each $name, $color in $bg {
+  .set.#{$name} {
+    background: $color;
+    color: white;
+  }
+}
+
+
+@each $name, $color in $bg-color-white {
+  .set.#{$name} {
+    background: $color;
+    color: #1d1d1d;
+  }
+}

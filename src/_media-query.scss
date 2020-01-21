@@ -1,19 +1,19 @@
 // MIN WIDTH
 
 @media (min-width: $media-screen-xs){
-  @include column($numbers, xs,false);
+  @include column(xs,false);
   @include container($container-xs);
 }
 @media (min-width: $media-screen-sm){
-  @include column($numbers, sm,false);
+  @include column(sm,false);
   @include container($container-sm);
 }
 @media (min-width: $media-screen-md){
-  @include column($numbers, md,false);
+  @include column(md,false);
   @include container($container-md);
 }
 @media (min-width: $media-screen-lg){
-  @include column($numbers, lg,false);
+  @include column(lg,false);
   @include container($container-lg);
 }
 

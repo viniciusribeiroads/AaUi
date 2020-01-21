@@ -1,0 +1,4 @@
+.box{
+  padding: $default-padding calc(#{$default-padding} - .35rem);
+  border-radius: $border-radius;
+}

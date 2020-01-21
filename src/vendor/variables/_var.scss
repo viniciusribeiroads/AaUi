@@ -1,20 +1,4 @@
 
-// Grid Column names
-$numbers: (
-        one: 1,
-        two: 2,
-        three: 3,
-        four: 4,
-        five: 5,
-        six: 6,
-        seven: 7,
-        eight: 8,
-        nine: 9,
-        ten: 10,
-        eleven: 11,
-        twelve: 12,
-);
-
 // sizes
 $sizes-rem: (
         1: .25rem !important,
@@ -26,7 +10,22 @@ $sizes-rem: (
         0: 0 !important
 );
 
-$size-base: .11rem;
+$default-padding: 1.5rem;
+
+$font-weight: (
+        light: 200,
+        medium: 400,
+        bold: 600,
+        bolder: bold
+);
+
+$text-align: (
+        left,
+        center,
+        right,
+);
+
+$size-base: 2px;
 $button-min-height: 2.25em;
 
 $fonts-rem: (

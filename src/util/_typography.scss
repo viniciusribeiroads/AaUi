@@ -2,16 +2,28 @@
 %text {
   margin-top: 1rem;
   margin-bottom: .5rem;
-  font-weight: 600;
 }
 
 @each $name, $i in $fonts-rem {
   h#{$name}{
     @extend %text;
+    font-weight: 600;
     font-size: $i;
   }
   .h#{$name}{
     @extend %text;
     font-size: $i;
+  }
+}
+
+@each $name, $value in $font-weight {
+  .font.#{$name}{
+    font-weight: #{$value};
+  }
+}
+
+@each $value in $text-align {
+  .align.#{$value}{
+    text-align: #{$value};
   }
 }

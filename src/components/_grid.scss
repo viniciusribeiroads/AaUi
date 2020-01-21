@@ -1,100 +1,68 @@
 
 %columns {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  flex: none;
 }
 
 .column{
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  @extend .p2;
   @extend %columns;
 }
-
-
 .grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+@media (min-width: $media-screen-sm){
+  .grid{
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @function width($i){
   @return 100% / 12 * $i;
 }
 
-@function width-grid($id){
-  @return 100% / $id;
-}
-
 @mixin column-props($i){
-  -ms-flex: 0 0 width($i);
-  flex: 0 0 width($i);
-  max-width: width($i);
+  @extend %columns;
+  @extend .column;
+  flex: none;
+  width: width($i);
 }
 
 @mixin column-off($i){
+  flex: none;
   margin-left: width($i);
 }
 
-@mixin columns-grid($i){
-  -ms-flex: 0 0 width-grid($i);
-  flex: 0 0 width-grid($i);
-  max-width: width-grid($i);
-}
-
-@mixin column($names, $screen, $extend){
-  @each $name, $i in $names {
-    @if $extend == false {
-      @if $screen != false {
-        .c#{$i}\@#{$screen}{
-          @include column-props($i)
-        }
-        .off-c#{$i}\@#{$screen}{
-          @include column-off($i)
-        }
-        .grid.#{$name}\@#{$screen} .column{
-          @include columns-grid($i)
-        }
+@mixin column($screen, $extend){
+  @for $value from 1 through  12 {
+    @if $screen != false {
+      .s#{$value}\@#{$screen}{
+        @include column-props($value);
       }
-      @else {
-        .c#{$i}{
-          @include column-props($i)
-        }
-        .grid.#{$name} .column{
-          @include columns-grid($i)
-        }
-        .off-#{$i}{
-          @include column-off($i)
-        }
+      .s#{$value}-off\@#{$screen}{
+        @include column-off($value);
       }
     }
     @else {
-      @if $screen != null {
-        .c#{$i}\@#{$screen}{
-          @extend %columns;
-        }
-        .grid.#{$name}\@#{$screen} .column{
-          @extend %columns;
-        }
+      .s#{$value}{
+        @include column-props($value);
       }
-      @else {
-        .grid.#{$name} .column{
-          @extend %columns;
-        }
-        .c#{$i}{
-          @extend %columns;
-        }
+      .s#{$value}-off{
+        @include column-off($value);
       }
     }
   }
 }
 
-@include column($numbers, null,true);
-@include column($numbers, xs,true);
-@include column($numbers, sm,true);
-@include column($numbers, md,true);
-@include column($numbers, lg,true);
-
-@include column($numbers, false, false);
+@include column(false,true);
+@include column(xs,true);
+@include column(sm,true);
+@include column(md,true);
+@include column(lg,true);
