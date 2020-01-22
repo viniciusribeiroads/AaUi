@@ -6027,7 +6027,7 @@ readers do not read off random characters that represent icons */
 .button.loading {
   color: transparent !important;
   align-items: center;
-  cursor: default;
+  cursor: default !important;
 }
 .button.loading:after {
   content: "";
@@ -6234,6 +6234,7 @@ readers do not read off random characters that represent icons */
   background: transparent;
   color: rgba(0, 0, 0, 0.57);
   box-shadow: none;
+  cursor: default !important;
 }
 .button.label:nth-child(1) {
   border-right: none;
@@ -6278,6 +6279,11 @@ readers do not read off random characters that represent icons */
 }
 .group .button.outlined:nth-last-child(1) {
   border-left: 1px solid;
+}
+.group .button:not(:nth-child(1)):not(:nth-last-child(1)) {
+  border-radius: 0;
+  border-left: 1px solid;
+  border-right: 1px solid;
 }
 
 .tiny {

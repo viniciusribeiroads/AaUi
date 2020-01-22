@@ -115,7 +115,7 @@
   &.loading{
     color: transparent !important;
     align-items: center;
-    cursor: default;
+    cursor: default !important;
     &:after{
       content: "";
       position: absolute;
@@ -135,7 +135,7 @@
     background: transparent;
     color: $text-grey-color;
     box-shadow: none;
-
+    cursor: default !important;
     &:nth-child(1){
       border-right: none;
     }
@@ -183,6 +183,11 @@
     &:nth-last-child(1){
       border-left: $size-base/2 solid;
     }
+  }
+  & .button:not(:nth-child(1)):not(:nth-last-child(1)){
+    border-radius: 0;
+    border-left: $size-base/2 solid;
+    border-right: $size-base/2 solid;
   }
 }
 
