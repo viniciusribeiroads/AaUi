@@ -61,10 +61,11 @@
     @include prefix((box-shadow: $shadow-hover), webkit moz ms);
   }
 
-  &.rounded{
-    border-radius: 2em;
-  }
 
+
+  &:not(.fluid):not(.fluid\@md):not(.fluid\@xs):not(.fluid\@sm):not(.fluid\@lg){
+    margin-bottom: 0.5rem;
+  }
 
   &.with.icon{
     padding-left: 0;
@@ -147,20 +148,40 @@
   &.outlined{
     background: transparent;
     border: $size-base solid;
-    height: calc(#{$button-min-height} - #{$size-base});
-    padding: 0 calc(1.25em - #{$size-base});
+    height: calc(#{$button-min-height} - (#{$size-base} * 2));
+    padding: 0 calc(1.25em - (#{$size-base} * 2));
     &.with.icon i{
         border-radius: 0;
-        height: calc(#{$button-min-height} - #{$size-base});
-        width: calc(#{$button-min-height} - #{$size-base});
+        height: calc(#{$button-min-height} - (#{$size-base} * 2));
+        width: calc(#{$button-min-height} - (#{$size-base} * 2));
     }
     &.only.icon i{
       border-radius: 0;
-      height: calc(#{$button-min-height} - #{$size-base});
-      width: calc(#{$button-min-height} - #{$size-base});
+      height: calc(#{$button-min-height} - (#{$size-base} * 2));
+      width: calc(#{$button-min-height} - (#{$size-base} * 2));
     }
   }
+  &.link{
+    background: transparent;
+    color: black;
+    text-decoration: underline;
+  }
+  &.rounded{
+    border-radius: 2em;
 
+    &.with.icon i{
+      border-top-left-radius: 2em;
+      border-bottom-left-radius: 2em;
+    }
+    &.with.right.icon i{
+      border-radius: 0;
+      border-top-right-radius: 2em;
+      border-bottom-right-radius: 2em;
+    }
+    &.only.icon i{
+      border-radius: 0;
+    }
+  }
 }
 
 .group{
@@ -202,5 +223,11 @@
     }
   }
 }
+
+//fixer for action buttons of card
+.action .button  {
+  margin-bottom: 0 !important;
+}
+
 
 @include default-sizes($default-sizes);
