@@ -1,11 +1,17 @@
 
-@each $name, $color in $bg {
+@each $name, $color in $bg-func {
   .set.#{$name} {
     background: $color;
     color: white;
   }
 }
 
+@each $name, $color in $bg-colored {
+  .set.#{$name} {
+    background: $color;
+    color: white;
+  }
+}
 
 @each $name, $color in $bg-color-white {
   .set.#{$name} {

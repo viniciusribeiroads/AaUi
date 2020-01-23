@@ -10,8 +10,8 @@ document.onpointerdown = function (event) {
     }
 
     let target = event.target;
-    while (target && target.classList && !target.classList.contains("box")) target = target.parentNode;
-    if (!target || !target.classList || (!target.classList.contains("box") && !target.classList.contains("box"))) return;
+    while (target && target.classList && !target.classList.contains("button")) target = target.parentNode;
+    if (!target || !target.classList || !target.classList.contains("button")) return;
 
     const x = event.x - target.getBoundingClientRect().left;
     const y = event.y - target.getBoundingClientRect().top;
@@ -31,12 +31,12 @@ document.onpointerdown = function (event) {
     target.appendChild(parent);
 
     const effect = document.createElement("span");
+    effect.className = "ripplespan";
     effect.style.position = "absolute";
     effect.style.top = (y - size) + "px";
     effect.style.left = (x - size) + "px";
     effect.style.height = size * 2 + "px";
     effect.style.width = size * 2 + "px";
-    effect.style.background = "rgba(0, 0, 0, 0.15)";
     effect.style.borderRadius = "50%";
     effect.style.transform = "scale(0)";
     effect.style.transition = "opacity 640ms, transform 640ms";

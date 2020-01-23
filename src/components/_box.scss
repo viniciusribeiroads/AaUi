@@ -2,4 +2,5 @@
   padding: $default-padding calc(#{$default-padding} - .35rem);
   border-radius: $border-radius;
   @include prefix((box-shadow: 0px 5px 10px 0 #00000038), webkit ms moz);
+  margin-bottom: .75em;
 }

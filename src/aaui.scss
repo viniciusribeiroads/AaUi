@@ -20,7 +20,6 @@ body{
 @import "fontawesome/scss/regular";
 @import "fontawesome/scss/solid";
 
-
 // variables
 @import "vendor/variables/var";
 @import "vendor/variables/theme";
@@ -29,6 +28,7 @@ body{
 // components
 @import "components/card";
 @import "components/box";
+@import "components/alert";
 @import "components/button";
 @import "components/content";
 @import "components/grid";

@@ -1,0 +1,21 @@
+.alert {
+  & .message{
+    background: #dddddd;
+    padding: 1em;
+    @extend .mb3;
+    border-radius: $border-radius;
+    & .title {
+      margin: 0;
+      font-size: 1.25em;
+      font-weight: 600;
+      padding-bottom: 0.5em;
+    }
+  }
+}
+
+@each $name, $value in $bg-func {
+  .set.#{$name}.light {
+    @include rgba-background($value, 0.1);
+    color: darken($value, 20%);
+  }
+}

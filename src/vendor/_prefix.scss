@@ -8,3 +8,7 @@
     #{$property}: $value;
   }
 }
+
+@mixin rgba-background($hexcolor, $opacity) {
+  background-color: rgba($hexcolor, $opacity);
+}
