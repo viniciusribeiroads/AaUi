@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/aaui.css">
+    <link rel="stylesheet"
+          href="highlight.css">
+    <script src="highlight.pack.js"></script>
+    <script src="dist/aaui.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <div class="content fluid@md">
+        <h2>Grid system</h2>
+        <p class="h5">The basic grid</p>
+        <div class="grid">
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    1
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    2
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    3
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    4
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    5
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    6
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    7
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    8
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    9
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    10
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    11
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set grey200 font bold align center">
+                    12
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="column">
+                <div class="box set primary font bold align center">
+                    Column
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set primary font bold align center">
+                    Column
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set primary font bold align center">
+                    Column
+                </div>
+            </div>
+            <div class="column">
+                <div class="box set primary font bold align center">
+                    Column
+                </div>
+            </div>
+        </div>
+
+        <h2>Buttons</h2>
+        <p class="h5">The normal button</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button mr2">Button</button>
+            </div>
+        </div>
+
+        <p class="h5">Colored buttons</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button ripple primary mr2" >Primary</button>
+                <button class="button ripple success mr2">Success</button>
+                <button class="button danger mr2">Danger</button>
+                <button class="button warning mr2">Warning</button>
+                <button class="button info mr2">Info</button>
+                <button class="button purple mr2">Purple</button>
+                <button class="button red mr2">Red</button>
+                <button class="button cyan mr2">Cyan</button>
+                <button class="button dark mr2">Dark</button>
+                <button class="button orange mr2">Orange</button>
+            </div>
+        </div>
+
+        <p class="h5">Grey scale</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button grey100 mr2">Grey100</button>
+                <button class="button grey200 mr2">Grey200</button>
+                <button class="button grey300 mr2">Grey300</button>
+                <button class="button grey400 mr2">Grey400</button>
+                <button class="button black mr2">Black</button>
+            </div>
+        </div>
+
+        <p class="h5">Outlined</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button outlined primary mr2">Primary</button>
+                <button class="button outlined success mr2">Success</button>
+                <button class="button outlined danger mr2">Danger</button>
+                <button class="button outlined warning mr2">Warning</button>
+                <button class="button outlined info mr2">Info</button>
+                <button class="button outlined purple mr2">Purple</button>
+                <button class="button outlined red mr2">Red</button>
+                <button class="button outlined cyan mr2">Cyan</button>
+                <button class="button outlined dark mr2">Dark</button>
+                <button class="button outlined orange mr2">Orange</button>
+            </div>
+        </div>
+
+
+        <p class="h5">Rounded</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button rounded primary mr2">Primary</button>
+                <button class="button rounded success mr2">Success</button>
+                <button class="button rounded danger mr2">Danger</button>
+                <button class="button rounded warning mr2">Warning</button>
+                <button class="button rounded info mr2">Info</button>
+                <button class="button rounded purple mr2">Purple</button>
+                <button class="button rounded red mr2">Red</button>
+                <button class="button rounded cyan mr2">Cyan</button>
+                <button class="button rounded dark mr2">Dark</button>
+                <button class="button rounded orange mr2">Orange</button>
+            </div>
+        </div>
+
+
+        <p class="h5">With icon</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button with icon primary mr2">
+                    <i class="fas fa-heart"></i>
+                    With left icon
+                </button>
+                <button class="button with icon right primary mr2">
+                    With right icon
+                    <i class="fas fa-heart"></i>
+                </button>
+                <button class="button only icon primary mr2">
+                    <i class="fas fa-heart"></i>
+                </button>
+
+                <button class="button outlined with icon right primary mr2">
+                    With right icon
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <p class="h5">Button group</p>
+        <div class="grid mb2">
+            <div class="column">
+                <div class="group mr2">
+                    <div class="button success">Yes</div>
+                    <div class="button danger">No</div>
+                </div>
+                <div class="group mr2">
+                    <button class="button with icon grey200 ">
+                        <i class="fas fa-fast-backward"></i>
+                        Back
+                    </button>
+                    <button class="button only icon primary">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="button with icon right grey200">
+                        Next
+                        <i class="fas fa-fast-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="h5">Buttons sizes</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button primary tiny mr2">Tiny</button>
+                <button class="button primary small mr2">Small</button>
+                <button class="button primary mr2">Normal</button>
+                <button class="button primary large mr2">Large</button>
+                <button class="button primary big mr2">Big</button>
+            </div>
+        </div>
+
+        <p class="h5">With Label</p>
+        <div class="grid mb2">
+            <div class="column">
+                <div class="group mr2">
+                    <button class="button red">Dislike</button>
+                    <span class="button red label">10k</span>
+                </div>
+                <div class="group mr2">
+                    <span class="button success label">10k</span>
+                    <button class="button indicator success">Like</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="h5">Loading</p>
+        <div class="grid mb2">
+            <div class="column">
+                <button class="button primary loading mr2">loading</button>
+                <button class="button grey200 loading mr2">loading</button>
+                <button class="button success outlined loading mr2">loading</button>
+            </div>
+        </div>
+
+        <h2>Card</h2>
+        <p class="h5">Card without title and footer</p>
+        <div class="grid mb2">
+            <div class="s5@md">
+                <div class="card body">Card</div>
+            </div>
+        </div>
+        <p class="h5">Card with title and footer</p>
+        <div class="grid mb2">
+            <div class="s5@md">
+                <div class="card">
+                    <div class="title">Title</div>
+                    <div class="body">
+                        Body
+                    </div>
+                    <div class="footer">Footer</div>
+                </div>
+            </div>
+        </div>
+
+        <p class="h5">Card title with action </p>
+        <div class="grid mb2">
+            <div class="column c5@md">
+                <div class="card">
+                    <div class="title">
+                        Title
+                        <div class="action">
+                            <button class="button success only icon">
+                                <span><i class="fas fa-plus"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="body">
+                        Body
+                    </div>
+                    <div class="footer">
+                        Footer
+                        <div class="action">
+                            <button class="button red with icon">
+                                <span><i class="far fa-trash-alt"></i></span>Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+

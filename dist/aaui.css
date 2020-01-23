@@ -5955,7 +5955,7 @@ readers do not read off random characters that represent icons */
   border: none;
   font-size: 1rem;
   min-height: 2.25em;
-  float: left;
+  display: inline-flex;
   font-weight: 600;
   background: #e6e6e6;
   outline: none;
@@ -5982,11 +5982,8 @@ readers do not read off random characters that represent icons */
   -ms-box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.1) inset;
 }
-.button:focus {
-  -webkit-box-shadow: 0 -3px 10px 0 #00000026 inset;
-  -moz-box-shadow: 0 -3px 10px 0 #00000026 inset;
-  -ms-box-shadow: 0 -3px 10px 0 #00000026 inset;
-  box-shadow: 0 -3px 10px 0 #00000026 inset;
+.button.rounded {
+  border-radius: 2em;
 }
 .button.with.icon {
   padding-left: 0;
@@ -6248,19 +6245,19 @@ readers do not read off random characters that represent icons */
   height: calc(2.25em - 2px);
   padding: 0 calc(1.25em - 2px);
 }
-.button.outlined.with.icon span {
+.button.outlined.with.icon i {
   border-radius: 0;
   height: calc(2.25em - 2px);
   width: calc(2.25em - 2px);
 }
-.button.outlined.only.icon span {
+.button.outlined.only.icon i {
   border-radius: 0;
   height: calc(2.25em - 2px);
   width: calc(2.25em - 2px);
 }
 
 .group {
-  float: left;
+  display: inline-flex;
 }
 .group .button:nth-child(1) {
   border-top-left-radius: 0.2rem;

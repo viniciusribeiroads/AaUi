@@ -1,23 +1,62 @@
-const buttons = document.getElementsByClassName('ripple');
+let current;
 
-[...buttons].forEach(button => {
-    button.onmousedown = function (e) {
+document.onpointerdown = function (event) {
+    if (current) {
+        const remove = current;
+        current = null;
+        setTimeout(function () {
+            if (remove.parentNode) remove.parentNode.removeChild(remove);
+        }, 800);
+    }
 
-        const x = e.pageX - this.offsetLeft;
-        const y = e.pageY - this.offsetTop;
-        const w = this.offsetWidth;
+    let target = event.target;
+    while (target && target.classList && !target.classList.contains("box")) target = target.parentNode;
+    if (!target || !target.classList || (!target.classList.contains("box") && !target.classList.contains("box"))) return;
 
-        const ripple = document.createElement('span');
+    const x = event.x - target.getBoundingClientRect().left;
+    const y = event.y - target.getBoundingClientRect().top;
+    const maxW = Math.max(x, target.offsetWidth - x);
+    const maxH = Math.max(y, target.offsetHeight - y);
+    const size = Math.sqrt(maxW * maxW + maxH * maxH);
 
-        ripple.className = 'ripple';
-        ripple.style.left = x + 'px';
-        ripple.style.top = y + 'px';
-        ripple.style.setProperty('--scale', w);
+    const parent = document.createElement("span");
+    parent.style.position = "absolute";
+    parent.style.top = "0";
+    parent.style.right = "0";
+    parent.style.bottom = "0";
+    parent.style.left = "0";
+    parent.style.overflow = "hidden";
+    parent.style.borderRadius = "inherit";
+    parent.style.transform = "perspective(0)";
+    target.appendChild(parent);
 
-        this.appendChild(ripple);
+    const effect = document.createElement("span");
+    effect.style.position = "absolute";
+    effect.style.top = (y - size) + "px";
+    effect.style.left = (x - size) + "px";
+    effect.style.height = size * 2 + "px";
+    effect.style.width = size * 2 + "px";
+    effect.style.background = "rgba(0, 0, 0, 0.15)";
+    effect.style.borderRadius = "50%";
+    effect.style.transform = "scale(0)";
+    effect.style.transition = "opacity 640ms, transform 640ms";
+    parent.appendChild(effect);
 
-        setTimeout(() => {
-            ripple.parentNode.removeChild(ripple);
-        }, 500);
+    current = parent;
+
+    const timeout = setTimeout(function () {
+        effect.style.transform = "scale(1)";
+    }, 16);
+
+    document.onpointerup = document.onpointercancel = function () {
+        document.onpointerup = document.onpointercancel = document.onpointermove = null;
+        current.firstChild.style.opacity = "0";
     };
-});
+
+    document.onpointermove = function (move) {
+        if (event.x - move.x > 4 || event.x - move.x < -4 || event.y - move.y > 4 || event.y - move.y < -4) {
+            clearTimeout(timeout);
+            document.onpointercancel();
+        }
+    };
+};

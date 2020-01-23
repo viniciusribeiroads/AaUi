@@ -48,7 +48,7 @@
   border: none;
   font-size: 1rem;
   min-height: $button-min-height;
-  float: left;
+  display: inline-flex;
   font-weight: 600;
   background: $bg-light;
   outline: none;
@@ -60,8 +60,9 @@
   &:hover {
     @include prefix((box-shadow: $shadow-hover), webkit moz ms);
   }
-  &:focus{
-    @include prefix((box-shadow: $shadow-focus), webkit moz ms);
+
+  &.rounded{
+    border-radius: 2em;
   }
 
 
@@ -148,12 +149,12 @@
     border: $size-base solid;
     height: calc(#{$button-min-height} - #{$size-base});
     padding: 0 calc(1.25em - #{$size-base});
-    &.with.icon span{
+    &.with.icon i{
         border-radius: 0;
         height: calc(#{$button-min-height} - #{$size-base});
         width: calc(#{$button-min-height} - #{$size-base});
     }
-    &.only.icon span{
+    &.only.icon i{
       border-radius: 0;
       height: calc(#{$button-min-height} - #{$size-base});
       width: calc(#{$button-min-height} - #{$size-base});
@@ -163,7 +164,7 @@
 }
 
 .group{
-  float: left;
+  display: inline-flex;
   & .button:nth-child(1){
     border-top-left-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
